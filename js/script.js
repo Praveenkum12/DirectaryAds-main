@@ -122,3 +122,5 @@ const remover = function () {
 closeBtn.addEventListener('click', remover);
 
 overlay.addEventListener('click', remover);
+
+// END
