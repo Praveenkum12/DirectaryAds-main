@@ -1,0 +1,76 @@
+/* 1200px */
+@media only screen and (max-width: 75em) {
+  .menu-btn {
+    display: block;
+  }
+
+  .container {
+    max-width: 96rem;
+  }
+
+  .nav {
+    justify-content: space-between;
+  }
+
+  .nav__list {
+    display: none;
+  }
+
+  .hero-section {
+    max-width: 96rem;
+  }
+
+  .hero-form {
+    display: block;
+    width: 96rem;
+  }
+
+  .getting-input,
+  .search-btn {
+    width: 100% !important;
+    padding: 1.6rem 2.4rem;
+  }
+
+  .getting-input {
+    margin-bottom: 2.4rem;
+  }
+
+  .location-icon {
+    top: 2.5rem;
+  }
+
+  .slider__btn--right {
+    right: 5%;
+  }
+
+  .slider__btn--left {
+    left: 5%;
+  }
+
+  .slider__btn {
+    width: 6rem;
+    height: 6rem;
+    font-size: 1.6rem;
+  }
+}
+
+/* 1088px */
+@media only screen and (max-width: 68em) {
+  .blog-info {
+    gap: 3px;
+  }
+
+  .heading-blog {
+    font-size: 1.8rem;
+  }
+
+  .blog-content {
+    font-size: 1.4rem;
+    margin-bottom: 1.4rem;
+    line-height: 1.6;
+  }
+
+  .feature-btm-box {
+    padding: 2rem 1rem 2rem 1rem;
+  }
+}

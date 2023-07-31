@@ -1,0 +1,919 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DirectoryAds | Practice</title>
+    <link rel="stylesheet" href="./css/general.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/query.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="shortcut icon"
+      href="./img/logo-transparent-png.png"
+      type="image/x-icon"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+      integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+      integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <script defer src="./js/script.js"></script>
+  </head>
+  <body>
+    <header class="header">
+      <nav class="nav container">
+        <a href="#" class="nav__logo">DIRECTORYADS</a>
+        <ul class="nav__list">
+          <li class="nav__item"><a href="#">Home</a></li>
+          <li class="nav__item"><a href="#">Ads</a></li>
+          <li class="nav__item">
+            <div class="dropdown">
+              <a href="#" class="about-item"
+                >About<ion-icon
+                  class="chevron-icon"
+                  name="chevron-down-outline"
+                ></ion-icon
+              ></a>
+              <div class="dropdown-content drop-up">
+                <a href="#">The Company</a>
+                <a href="#">The Leadership</a>
+                <a href="#">Philosophy</a>
+                <a href="#">Careers</a>
+              </div>
+            </div>
+          </li>
+          <li class="nav__item"><a href="#">Blog </a></li>
+          <li class="nav__item"><a href="#">Contact</a></li>
+          <li class="nav__item log-region">
+            <a href="#" class="log-btn">Log In</a>
+          </li>
+          <li class="nav__item register__btn"><a href="#">Register</a></li>
+        </ul>
+
+        <button class="menu-btn">
+          <i class="fa-solid fa-bars fa-xs menu-icon"></i>
+        </button>
+      </nav>
+
+      <div class="hero-section">
+        <div class="hero-top-box">
+          <h1 class="heading-primary hero-heading">Welcome To DirectoryAds</h1>
+          <p class="hero-para">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+          </p>
+        </div>
+        <div class="hero-form-section">
+          <form action="#" class="hero-form">
+            <input
+              class="getting-input looking-input"
+              type="text"
+              placeholder="What are you looking for?"
+            />
+            <div class="location-box">
+              <input
+                class="getting-input location-input"
+                type="text"
+                placeholder="Location"
+              />
+              <i class="fa-solid fa-location-dot fa-sm location-icon"></i>
+            </div>
+            <div class="dropdown-box">
+              <select class="getting-input" name="category" id="categoryID">
+                <option value="">All Categories</option>
+                <option value="Real Estate">Real Estate</option>
+                <option value="Books and Magazines">Books and Magazines</option>
+                <option value="Furnitures">Furnitures</option>
+                <option value="Electronics">Electronics</option>
+                <option value="Cars and Vehicles">Cars and Vehicles</option>
+                <option value="Other">Other</option>
+              </select>
+            </div>
+            <button type="submit" class="search-btn btn">Search</button>
+          </form>
+        </div>
+
+        <div class="tag-section">
+          <p class="tag-heading">Trending Search:</p>
+          <ul class="tag__list">
+            <li class="tag__item"><a href="#">iPhone</a></li>
+            <li class="tag__item"><a href="#">Cars</a></li>
+            <li class="tag__item"><a href="#">Flowers</a></li>
+            <li class="tag__item"><a href="#">House</a></li>
+          </ul>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="feature-section">
+        <div class="container">
+        <h4 class="heading-feature ">Featured Ads</h4>
+        <!-- CAROUSEL FEATURE -->
+        <div class="owl-carousel owl-theme feature-grid">
+          <div class="feature-slide item" >
+            <div class="feature__img-box">
+              <a href="#"
+                ><img src="./img/iphone-img.webp" alt="iphone image" class="feature__img"
+              /></a>
+            </div>
+            <div class="feature-btm-box">
+            <div class="feature__sm-box">
+              <p class="platform">Electronics</p>
+              <div class="icon-outer">
+                <i class="fa-solid fa-heart icon-inner"></i>
+              </div>
+            </div>
+            <h6 class="model-name">iPhone X gray</h6>
+            <address class="address">Don St, Brooklyn, New York</address>
+            <ul class="star__list">
+              <li class="star__item">
+                <i class="fa-solid fa-star" style="color: #f89d13"></i>
+              </li>
+              <li class="star__item">
+                <i class="fa-solid fa-star" style="color: #f89d13"></i>
+              </li>
+              <li class="star__item">
+                <i class="fa-solid fa-star" style="color: #f89d13"></i>
+              </li>
+              <li class="star__item">
+                <i class="fa-solid fa-star" style="color: #f89d13"></i>
+              </li>
+              <li class="star__item">
+                <i class="fa-solid fa-star" style="color: #6c757d;"></i></i>
+              </li>
+              <P class="views">(3 Reviews)</P>
+            </ul>
+          </div>
+          </div>
+          <div class="feature-slide item" >
+            <div class="feature__img-box">
+              <a href="#"
+                ><img src="./img/business-img.webp" alt="business people shaking their hands" class="feature__img"
+              /></a>
+            </div>
+            <div class="feature-btm-box">
+            <div class="feature__sm-box">
+              <p class="platform">Cars & Vehicles</p>
+              <div class="icon-outer">
+                <i class="fa-solid fa-heart icon-inner"></i>
+              </div>
+            </div>
+            <h6 class="model-name">New Black Car</h6>
+            <address class="address">Don St, Brooklyn, New York</address>
+            <ul class="star__list">
+              <li class="star__item">
+                <i class="fa-solid fa-star" style="color: #f89d13"></i>
+              </li>
+              <li class="star__item">
+                <i class="fa-solid fa-star" style="color: #f89d13"></i>
+              </li>
+              <li class="star__item">
+                <i class="fa-solid fa-star" style="color: #f89d13"></i>
+              </li>
+              <li class="star__item">
+                <i class="fa-solid fa-star" style="color: #f89d13"></i>
+              </li>
+              <li class="star__item">
+                <i class="fa-solid fa-star" style="color: #6c757d;"></i></i>
+              </li>
+              <P class="views">(3 Reviews)</P>
+            </ul>
+          </div>
+          </div>
+          <div class="feature-slide item" >
+            <div class="feature__img-box">
+              <a href="#"
+                ><img src="./img/couples-img.webp" alt="couples sitting in the sofa image" class="feature__img"
+              /></a>
+            </div>
+            <div class="feature-btm-box">
+            <div class="feature__sm-box">
+              <p class="platform">Real Estate</p>
+              <div class="icon-outer">
+                <i class="fa-solid fa-heart icon-inner"></i>
+              </div>
+            </div>
+            <h6 class="model-name">Own New House</h6>
+            <address class="address">Don St, Brooklyn, New York</address>
+            <ul class="star__list">
+              <li class="star__item">
+                <i class="fa-solid fa-star" style="color: #f89d13"></i>
+              </li>
+              <li class="star__item">
+                <i class="fa-solid fa-star" style="color: #f89d13"></i>
+              </li>
+              <li class="star__item">
+                <i class="fa-solid fa-star" style="color: #f89d13"></i>
+              </li>
+              <li class="star__item">
+                <i class="fa-solid fa-star" style="color: #f89d13"></i>
+              </li>
+              <li class="star__item">
+                <i class="fa-solid fa-star" style="color: #6c757d;"></i></i>
+              </li>
+              <P class="views">(3 Reviews)</P>
+            </ul>
+          </div>
+          </div>
+          <div class="feature-slide item" >
+            <div class="feature__img-box">
+              <a href="#"
+                ><img src="./img/furniture-img.webp" alt="iphone image" class="feature__img"
+              /></a>
+            </div>
+            <div class="feature-btm-box">
+            <div class="feature__sm-box">
+              <p class="platform">Furniture</p>
+              <div class="icon-outer">
+                <i class="fa-solid fa-heart icon-inner"></i>
+              </div>
+            </div>
+            <h6 class="model-name">Wooden Chair & Table</h6>
+            <address class="address">Don St, Brooklyn, New York</address>
+            <ul class="star__list">
+              <li class="star__item">
+                <i class="fa-solid fa-star" style="color: #f89d13"></i>
+              </li>
+              <li class="star__item">
+                <i class="fa-solid fa-star" style="color: #f89d13"></i>
+              </li>
+              <li class="star__item">
+                <i class="fa-solid fa-star" style="color: #f89d13"></i>
+              </li>
+              <li class="star__item">
+                <i class="fa-solid fa-star" style="color: #f89d13"></i>
+              </li>
+              <li class="star__item">
+                <i class="fa-solid fa-star" style="color: #6c757d;"></i></i>
+              </li>
+              <P class="views">(3 Reviews)</P>
+            </ul>
+          </div>
+          </div>
+          <div class="feature-slide item" >
+            <div class="feature__img-box">
+              <a href="#"
+                ><img src="./img/iphone-img.webp" alt="iphone image" class="feature__img"
+              /></a>
+            </div>
+            <div class="feature-btm-box">
+            <div class="feature__sm-box">
+              <p class="platform">Electronics</p>
+              <div class="icon-outer">
+                <i class="fa-solid fa-heart icon-inner"></i>
+              </div>
+            </div>
+            <h6 class="model-name">iPhone X gray</h6>
+            <address class="address">Don St, Brooklyn, New York</address>
+            <ul class="star__list">
+              <li class="star__item">
+                <i class="fa-solid fa-star" style="color: #f89d13"></i>
+              </li>
+              <li class="star__item">
+                <i class="fa-solid fa-star" style="color: #f89d13"></i>
+              </li>
+              <li class="star__item">
+                <i class="fa-solid fa-star" style="color: #f89d13"></i>
+              </li>
+              <li class="star__item">
+                <i class="fa-solid fa-star" style="color: #f89d13"></i>
+              </li>
+              <li class="star__item">
+                <i class="fa-solid fa-star" style="color: #6c757d;"></i></i>
+              </li>
+              <P class="views">(3 Reviews)</P>
+            </ul>
+          </div>
+          </div>
+          <div class="feature-slide item" >
+            <div class="feature__img-box">
+              <a href="#"
+                ><img src="./img/business-img.webp" alt="business people shaking their hands" class="feature__img"
+              /></a>
+            </div>
+            <div class="feature-btm-box">
+            <div class="feature__sm-box">
+              <p class="platform">Cars & Vehicles</p>
+              <div class="icon-outer">
+                <i class="fa-solid fa-heart icon-inner"></i>
+              </div>
+            </div>
+            <h6 class="model-name">New Black Car</h6>
+            <address class="address">Don St, Brooklyn, New York</address>
+            <ul class="star__list">
+              <li class="star__item">
+                <i class="fa-solid fa-star" style="color: #f89d13"></i>
+              </li>
+              <li class="star__item">
+                <i class="fa-solid fa-star" style="color: #f89d13"></i>
+              </li>
+              <li class="star__item">
+                <i class="fa-solid fa-star" style="color: #f89d13"></i>
+              </li>
+              <li class="star__item">
+                <i class="fa-solid fa-star" style="color: #f89d13"></i>
+              </li>
+              <li class="star__item">
+                <i class="fa-solid fa-star" style="color: #6c757d;"></i></i>
+              </li>
+              <P class="views">(3 Reviews)</P>
+            </ul>
+          </div>
+          </div>
+          <div class="feature-slide item" >
+            <div class="feature__img-box">
+              <a href="#"
+                ><img src="./img/couples-img.webp" alt="couples sitting in the sofa image" class="feature__img"
+              /></a>
+            </div>
+            <div class="feature-btm-box">
+            <div class="feature__sm-box">
+              <p class="platform">Real Estate</p>
+              <div class="icon-outer">
+                <i class="fa-solid fa-heart icon-inner"></i>
+              </div>
+            </div>
+            <h6 class="model-name">Own New House</h6>
+            <address class="address">Don St, Brooklyn, New York</address>
+            <ul class="star__list">
+              <li class="star__item">
+                <i class="fa-solid fa-star" style="color: #f89d13"></i>
+              </li>
+              <li class="star__item">
+                <i class="fa-solid fa-star" style="color: #f89d13"></i>
+              </li>
+              <li class="star__item">
+                <i class="fa-solid fa-star" style="color: #f89d13"></i>
+              </li>
+              <li class="star__item">
+                <i class="fa-solid fa-star" style="color: #f89d13"></i>
+              </li>
+              <li class="star__item">
+                <i class="fa-solid fa-star" style="color: #6c757d;"></i></i>
+              </li>
+              <P class="views">(3 Reviews)</P>
+            </ul>
+          </div>
+          </div>
+          <div class="feature-slide item" >
+            <div class="feature__img-box">
+              <a href="#"
+                ><img src="./img/furniture-img.webp" alt="iphone image" class="feature__img"
+              /></a>
+            </div>
+            <div class="feature-btm-box">
+            <div class="feature__sm-box">
+              <p class="platform">Furniture</p>
+              <div class="icon-outer">
+                <i class="fa-solid fa-heart icon-inner"></i>
+              </div>
+            </div>
+            <h6 class="model-name">Wooden Chair & Table</h6>
+            <address class="address">Don St, Brooklyn, New York</address>
+            <ul class="star__list">
+              <li class="star__item">
+                <i class="fa-solid fa-star" style="color: #f89d13"></i>
+              </li>
+              <li class="star__item">
+                <i class="fa-solid fa-star" style="color: #f89d13"></i>
+              </li>
+              <li class="star__item">
+                <i class="fa-solid fa-star" style="color: #f89d13"></i>
+              </li>
+              <li class="star__item">
+                <i class="fa-solid fa-star" style="color: #f89d13"></i>
+              </li>
+              <li class="star__item">
+                <i class="fa-solid fa-star" style="color: #6c757d;"></i></i>
+              </li>
+              <P class="views">(3 Reviews)</P>
+            </ul>
+          </div>
+          </div>
+        </div>
+      </div>
+      </section>
+
+      <section class="section-categories">
+        <div class="container">
+          <div class="popular-heading-box">
+            <h2 class="heading-secondary popular-heading">Popular Categories</h2>
+            <p class="popular-para">Lorem Ipsum Dolor Sit Amet</p>
+          </div>
+
+          <div class="card-container">
+            <a href="#" class="card-content-box">
+              <i class="fa-solid fa-car fa-2xl card-icon"></i>
+              <p class="categ-name">Cars and Vehicles</p>
+              <p class="count">1,921</p>
+            </a>
+
+            <a href="#" class="card-content-box">
+
+              <i class="fa-solid fa-couch fa-2xl card-icon"></i>
+              <p class="categ-name">Furniture</p>
+              <p class="count">2,339</p>
+            </a>
+
+            <a href="#" class="card-content-box">
+              <i class="fa-solid fa-house-chimney fa-2xl card-icon"></i>
+              <p class="categ-name">Real Estate</p>
+              <p class="count">4,398</p>
+            </a>
+
+            <a href="#" class="card-content-box">
+              <i class="fa-solid fa-book fa-2xl card-icon"></i>
+              <p class="categ-name">Book & Magazines</p>
+              <p class="count">3,298</p>
+            </a>
+
+            <a href="#" class="card-content-box">
+              <i class="fa-solid fa-tv fa-2xl card-icon"></i>
+              <p class="categ-name">Electronics</p>
+              <p class="count">2,932</p>
+            </a>
+
+            <a href="#" class="card-content-box">
+              <i class="fa-solid fa-pizza-slice fa-2xl card-icon"></i>
+              <p class="categ-name">Other</p>
+              <p class="count">182</p>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-trending">
+        <div class="container">
+          <h2 class="heading-secondary trend-heading">Trending Today</h2>
+          <div class="trend-container">      
+          <div class="trend-box" >
+            <div class="trend-img">
+              <a href="#" class="trend-img-box"
+              ><img src="./img/couples-img.webp" alt="couple image" class="trend__img"
+              /></a>
+            </div>
+            <div class="feature-btm-box">
+            <div class="feature__sm-box">
+              <p class="platform">Real Estate</p>
+              <div class="icon-outer">
+                <i class="fa-solid fa-heart icon-inner"></i>
+              </div>
+            </div>
+            <h6 class="model-name">Own New House</h6>
+            <address class="address">Don St, Brooklyn, New York</address>
+            <ul class="star__list">
+              <li class="star__item">
+                <i class="fa-solid fa-star" style="color: #f89d13"></i>
+              </li>
+              <li class="star__item">
+                <i class="fa-solid fa-star" style="color: #f89d13"></i>
+              </li>
+              <li class="star__item">
+                <i class="fa-solid fa-star" style="color: #f89d13"></i>
+              </li>
+              <li class="star__item">
+                <i class="fa-solid fa-star" style="color: #f89d13"></i>
+              </li>
+              <li class="star__item">
+                <i class="fa-solid fa-star" style="color: #6c757d;"></i></i>
+              </li>
+              <P class="views">(3 Reviews)</P>
+            </ul>
+          </div>
+          </div>
+
+          <div class="trend-box" >
+            <div class="trend-img">
+              <a href="#" class="trend-img-box"
+              ><img src="./img/business-img.webp" alt="business people image" class="trend__img"
+              /></a>
+            </div>
+            <div class="feature-btm-box">
+            <div class="feature__sm-box">
+              <p class="platform">Cars & Vehicles</p>
+              <div class="icon-outer">
+                <i class="fa-solid fa-heart icon-inner"></i>
+              </div>
+            </div>
+            <h6 class="model-name">New Black Car</h6>
+            <address class="address">Don St, Brooklyn, New York</address>
+            <ul class="star__list">
+              <li class="star__item">
+                <i class="fa-solid fa-star" style="color: #f89d13"></i>
+              </li>
+              <li class="star__item">
+                <i class="fa-solid fa-star" style="color: #f89d13"></i>
+              </li>
+              <li class="star__item">
+                <i class="fa-solid fa-star" style="color: #f89d13"></i>
+              </li>
+              <li class="star__item">
+                <i class="fa-solid fa-star" style="color: #f89d13"></i>
+              </li>
+              <li class="star__item">
+                <i class="fa-solid fa-star" style="color: #6c757d;"></i></i>
+              </li>
+              <P class="views">(3 Reviews)</P>
+            </ul>
+          </div>
+          </div>
+
+          <div class="trend-box" >
+            <div class="trend-img">
+              <a href="#" class="trend-img-box"
+              ><img src="./img/furniture-img.webp" alt="chair image" class="trend__img"
+              /></a>
+            </div>
+            <div class="feature-btm-box">
+            <div class="feature__sm-box">
+              <p class="platform">Furniture</p>
+              <div class="icon-outer">
+                <i class="fa-solid fa-heart icon-inner"></i>
+              </div>
+            </div>
+            <h6 class="model-name">Wooden Chair & Table</h6>
+            <address class="address">Don St, Brooklyn, New York</address>
+            <ul class="star__list">
+              <li class="star__item">
+                <i class="fa-solid fa-star" style="color: #f89d13"></i>
+              </li>
+              <li class="star__item">
+                <i class="fa-solid fa-star" style="color: #f89d13"></i>
+              </li>
+              <li class="star__item">
+                <i class="fa-solid fa-star" style="color: #f89d13"></i>
+              </li>
+              <li class="star__item">
+                <i class="fa-solid fa-star" style="color: #f89d13"></i>
+              </li>
+              <li class="star__item">
+                <i class="fa-solid fa-star" style="color: #6c757d;"></i></i>
+              </li>
+              <P class="views">(3 Reviews)</P>
+            </ul>
+          </div>
+          </div>
+
+          <div class="trend-box" >
+            <div class="trend-img">
+              <a href="#" class="trend-img-box"
+              ><img src="./img/couples-img.webp" alt="couple image" class="trend__img"
+              /></a>
+            </div>
+            <div class="feature-btm-box">
+            <div class="feature__sm-box">
+              <p class="platform">Real Estate</p>
+              <div class="icon-outer">
+                <i class="fa-solid fa-heart icon-inner"></i>
+              </div>
+            </div>
+            <h6 class="model-name">Own New House</h6>
+            <address class="address">Don St, Brooklyn, New York</address>
+            <ul class="star__list">
+              <li class="star__item">
+                <i class="fa-solid fa-star" style="color: #f89d13"></i>
+              </li>
+              <li class="star__item">
+                <i class="fa-solid fa-star" style="color: #f89d13"></i>
+              </li>
+              <li class="star__item">
+                <i class="fa-solid fa-star" style="color: #f89d13"></i>
+              </li>
+              <li class="star__item">
+                <i class="fa-solid fa-star" style="color: #f89d13"></i>
+              </li>
+              <li class="star__item">
+                <i class="fa-solid fa-star" style="color: #6c757d;"></i></i>
+              </li>
+              <P class="views">(3 Reviews)</P>
+            </ul>
+          </div>
+          </div>
+
+          <div class="trend-box" >
+            <div class="trend-img">
+              <a href="#" class="trend-img-box"
+              ><img src="./img/iphone-img.webp" alt="iphone image" class="trend__img"
+              /></a>
+            </div>
+            <div class="feature-btm-box">
+            <div class="feature__sm-box">
+              <p class="platform">Electronics</p>
+              <div class="icon-outer">
+                <i class="fa-solid fa-heart icon-inner"></i>
+              </div>
+            </div>
+            <h6 class="model-name">iPhone X gray</h6>
+            <address class="address">Don St, Brooklyn, New York</address>
+            <ul class="star__list">
+              <li class="star__item">
+                <i class="fa-solid fa-star" style="color: #f89d13"></i>
+              </li>
+              <li class="star__item">
+                <i class="fa-solid fa-star" style="color: #f89d13"></i>
+              </li>
+              <li class="star__item">
+                <i class="fa-solid fa-star" style="color: #f89d13"></i>
+              </li>
+              <li class="star__item">
+                <i class="fa-solid fa-star" style="color: #f89d13"></i>
+              </li>
+              <li class="star__item">
+                <i class="fa-solid fa-star" style="color: #6c757d;"></i></i>
+              </li>
+              <P class="views">(3 Reviews)</P>
+            </ul>
+          </div>
+          </div>
+
+          <div class="trend-box" >
+            <div class="trend-img">
+              <a href="#" class="trend-img-box"
+              ><img src="./img/furniture-img.webp" alt="chair image" class="trend__img"
+              /></a>
+            </div>
+            <div class="feature-btm-box">
+            <div class="feature__sm-box">
+              <p class="platform">Furniture</p>
+              <div class="icon-outer">
+                <i class="fa-solid fa-heart icon-inner"></i>
+              </div>
+            </div>
+            <h6 class="model-name">Wooden Chair & Table</h6>
+            <address class="address">Don St, Brooklyn, New York</address>
+            <ul class="star__list">
+              <li class="star__item">
+                <i class="fa-solid fa-star" style="color: #f89d13"></i>
+              </li>
+              <li class="star__item">
+                <i class="fa-solid fa-star" style="color: #f89d13"></i>
+              </li>
+              <li class="star__item">
+                <i class="fa-solid fa-star" style="color: #f89d13"></i>
+              </li>
+              <li class="star__item">
+                <i class="fa-solid fa-star" style="color: #f89d13"></i>
+              </li>
+              <li class="star__item">
+                <i class="fa-solid fa-star" style="color: #6c757d;"></i></i>
+              </li>
+              <P class="views">(3 Reviews)</P>
+            </ul>
+          </div>
+          </div>
+        </div>
+        </div>
+      </section>
+
+      <section class="section-testimonial">
+        <div class="container">
+          <div class="testimonial-heading-box">
+            <h2 class="heading-secondary testimonial-heading">Testimonials</h2>
+          </div>
+          <div class="slider-cover">
+          <div class="slider">
+            <div class="slide">
+              <div class="slider-inner">
+                <div class="testimonial-img-box">
+                  <img src="./img/john-smith-img.webp" class="testimonial-img" alt="john smith image">
+                </div>
+                <p class="client-name">John Smith</p>
+                <p class="testimonial-content">“Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur unde reprehenderit aperiam quaerat fugiat repudiandae explicabo animi minima fuga beatae illum eligendi incidunt consequatur. Amet dolores excepturi earum unde iusto.”</p>
+              </div>
+            </div>
+
+            <div class="slide">
+              <div class="slider-inner">
+                <div class="testimonial-img-box">
+                  <img src="./img/christine-img.webp" class="testimonial-img" alt="Christine Aguilar image">
+                </div>
+                <p class="client-name">Christine Aguilar</p>
+                <p class="testimonial-content">“Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur unde reprehenderit aperiam quaerat fugiat repudiandae explicabo animi minima fuga beatae illum eligendi incidunt consequatur. Amet dolores excepturi earum unde iusto.”</p>
+              </div>
+            </div>
+
+            <div class="slide">
+              <div class="slider-inner">
+                <div class="testimonial-img-box">
+                  <img src="./img/robert-spears.webp" class="testimonial-img" alt="Robert Spears image">
+                </div>
+                <p class="client-name">Robert Spears</p>
+                <p class="testimonial-content">“Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur unde reprehenderit aperiam quaerat fugiat repudiandae explicabo animi minima fuga beatae illum eligendi incidunt consequatur. Amet dolores excepturi earum unde iusto.”</p>
+              </div>
+            </div>
+
+            <div class="slide">
+              <div class="slider-inner">
+                <div class="testimonial-img-box">
+                  <img src="./img/women-img.webp" class="testimonial-img" alt="Bruce Rogers image">
+                </div>
+                <p class="client-name">Bruce Rogers</p>
+                <p class="testimonial-content">“Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur unde reprehenderit aperiam quaerat fugiat repudiandae explicabo animi minima fuga beatae illum eligendi incidunt consequatur. Amet dolores excepturi earum unde iusto.”</p>
+              </div>
+            </div>
+
+              <button class="slider__btn slider__btn--left">
+                <span>&lt;</span>
+              </button>
+              <button class="slider__btn slider__btn--right">
+                <span>&gt;</span>
+              </button>
+              
+          </div>
+          <div class="dots">
+            <button class="dots__dot" data-slide="0"></button>
+            <button class="dots__dot" data-slide="1"></button>
+            <button class="dots__dot" data-slide="2"></button>
+            <button class="dots__dot" data-slide="3"></button>
+          </div>
+        </div>
+          
+        </div>
+      </section>
+
+      <section class="section-blog">
+        <div class="container">
+          <div class="popular-heading-box">
+            <h2 class="heading-secondary popular-heading">Our Blog</h2>
+            <p class="popular-para blog-para">See Our Daily News & Updates</p>
+          </div>
+
+          <div class="blog-container">
+            <div class="blog-box">
+              <img src="./img/business-img.webp" alt="business deal happening image" class="blog-img">
+              <h5 class="heading-blog">Many People Selling Online</h5>
+              <div class="blog-info">
+                by Mark Spiker <span class="period-sign">.</span> Jan 18, 2019 <span class="period-sign">.</span> <a href="#" class="news-blog">News</a>
+              </div>
+              <p class="blog-content">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus eligendi nobis ea maiores sapiente veritatis reprehenderit suscipit quaerat rerum voluptatibus a eius.
+              </p>
+            </div>
+
+            <div class="blog-box">
+              <img src="./img/couples-img.webp" alt="couple image" class="blog-img">
+              <h5 class="heading-blog">Many People Selling Online</h5>
+              <div class="blog-info">
+                by Mark Spiker <span class="period-sign">.</span> Jan 18, 2019 <span class="period-sign">.</span> <a href="#" class="news-blog">News</a>
+              </div>
+              <p class="blog-content">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus eligendi nobis ea maiores sapiente veritatis reprehenderit suscipit quaerat rerum voluptatibus a eius.
+              </p>
+            </div>
+
+            <div class="blog-box">
+              <img src="./img/furniture-img.webp" alt="furniture image" class="blog-img">
+              <h5 class="heading-blog">Many People Selling Online</h5>
+              <div class="blog-info">
+                by Mark Spiker <span class="period-sign">.</span> Jan 18, 2019 <span class="period-sign">.</span> <a href="#" class="news-blog">News</a>
+              </div>
+              <p class="blog-content">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus eligendi nobis ea maiores sapiente veritatis reprehenderit suscipit quaerat rerum voluptatibus a eius.
+              </p>
+            </div>
+          </div>
+
+          <div class="post-box">
+
+            <a href="#" class="post-btn btn">View All Posts</a>
+          </div>
+          
+        </div>
+      </section>
+
+      <section class="section-newsletter">
+        <div class="container newsletter-container">
+          <div class="newsletter-content">
+            <h4 class="newsletter-heading">Newsletter</h4>
+            <p class="newsletter-para">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          </div>
+          <form class="mail-box">
+            <input type="email" placeholder="Email" class="mail-input">
+            <button type="submit" class="subscribe-btn">Subcribe</button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-box">
+          <div class="footer-track">
+            <h3 class="footer-heading">About</h3>
+            <p class="footer-para">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident rerum unde possimus molestias dolorem fuga, illo quis fugiat!
+            </p>
+          </div>
+
+          <div class="footer-track">
+            <h3 class="footer-heading">Navigations</h3>
+            <ul class="footer-nav-list">
+              <li class="footer-nav-item"><a href="#">About Us</a></li>
+              <li class="footer-nav-item"><a href="#">Services</a></li>
+              <li class="footer-nav-item"><a href="#">Testimonial</a></li>
+              <li class="footer-nav-item"><a href="#">Contact Us</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-track">
+            <h3 class="footer-heading">Follow Us</h3>
+            <ul class="follow-list">
+              <li class="follow-item"><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+              <li class="follow-item"><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+              <li class="follow-item"><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+              <li class="follow-item"><a href="#"><i class="fa-brands fa-linkedin"></i></a></li>
+            </ul>
+          </div>
+
+          <div class="footer-track">
+            <div class="search-area">
+
+              <input class="footer-input" type="text" placeholder="Search products...">
+              <button class="footer-search-btn btn">Search</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-end">
+          <p class="copy-right">Copyright &copy;<span class="copy-right-year">2000</span> All rights reserved | This template is made with <span class="heart-symbol">&hearts;</span> by <a href="https://preview.colorlib.com/theme/directoryads/">Colorlib</a></p>
+        </div>
+        </div>
+
+    </footer>
+
+    <div class="overlay"></div>
+    <div class="mobile-nav">
+      <button class="btn-close">
+        <i class="fa-solid fa-xmark close-icon"></i>
+      </button>
+
+      <ul class="mobile-nav-list">
+          <li class="mobile-nav-item nav-active"><a href="#">Home</a></li>
+          <li class="mobile-nav-item"><a href="#">Ads</a></li>
+          <li class="mobile-nav-item">
+            <div class="mobile-about-box">
+              <p>About</p>
+              <i class="fa-solid fa-chevron-down"></i>
+            </div>
+            <div class="accord-down">
+              <a href="#">The Company</a>
+              <a href="#">The Leadership</a>
+              <a href="#">Philosophy</a>
+              <a href="#">Careers</a>
+            </div>
+
+          </li>
+          <li class="mobile-nav-item"><a href="#">Blog</a></li>
+          <li class="mobile-nav-item"><a href="#">Contact</a></li>
+          <li class="mobile-nav-item"><a href="#">Log In</a></li>
+          <li class="mobile-nav-item"><button class="mob-reg-btn">Register</button></li>
+      </ul>
+    </div>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+      integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+      integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+  </body>
+</html>

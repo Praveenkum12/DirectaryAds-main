@@ -1,0 +1,147 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+
+  overflow-x: hidden !important;
+}
+
+body {
+  font-family: 'Nanum Gothic', sans-serif;
+  font-size: 1.6rem;
+  line-height: 1;
+  position: relative;
+  max-width: 2112px;
+  margin: 0 auto;
+}
+
+::selection {
+  background-color: #000;
+  color: #fff;
+}
+
+.container {
+  max-width: 114rem;
+  margin: 0 auto;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+.heading-secondary {
+  font-size: 3.4rem;
+  color: #2f89fc;
+}
+
+.nav-active a {
+  color: #2f89fc !important;
+}
+
+.overlay {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.55);
+  top: 0;
+  transition: all 0.3s;
+
+  /* later */
+  opacity: 0;
+  z-index: -1;
+}
+
+.mobile-nav {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 30rem;
+  height: 100vh;
+  background-color: #fff;
+  z-index: 9999;
+  padding: 2rem 2rem 15rem;
+  transform: translateX(100%);
+  pointer-events: none;
+  visibility: hidden;
+  transition: all 0.5s;
+}
+
+.mobile-nav-active {
+  visibility: visible;
+  pointer-events: auto;
+  transform: translateX(0);
+}
+
+.btn-close {
+  background-color: transparent;
+  display: block;
+  padding: 0;
+  margin: 2.4rem 0 2.4rem auto;
+  cursor: pointer;
+}
+
+.close-icon {
+  font-size: 3rem !important;
+  color: #aaa;
+}
+
+.mobile-about-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+
+.accord-down {
+  display: flex;
+  flex-direction: column;
+
+  display: none;
+}
+
+.mobile-nav-list {
+  list-style: none;
+}
+
+.mobile-nav-item {
+  padding: 1rem 2rem;
+}
+
+.mobile-nav-item a:link,
+.mobile-nav-item a:visited,
+.mobile-about-box {
+  font-size: 1.8rem;
+  color: #212529;
+  line-height: 1.7;
+}
+
+.mob-reg-btn {
+  background-color: #2f89fc;
+  border-radius: 0;
+  cursor: pointer;
+  color: #fff;
+  transition: all 0.3s;
+}
+
+.mob-reg-btn:hover {
+  background-color: #046df4;
+}
+
+.mobile-nav-item a,
+.mobile-nav-item p,
+.mobile-nav-item i {
+  transition: all 0.3s;
+}
+
+.mobile-nav-item:hover a,
+.mobile-nav-item:hover p,
+.mobile-nav-item:hover i {
+  color: #2f89fc;
+}
