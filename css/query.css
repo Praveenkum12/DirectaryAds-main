@@ -70,7 +70,453 @@
     line-height: 1.6;
   }
 
-  .feature-btm-box {
+  .trend-btm-box {
     padding: 2rem 1rem 2rem 1rem;
+  }
+
+  .feature__sm-box {
+    margin-bottom: 1.6rem;
+  }
+
+  .blog-info {
+    gap: 0;
+  }
+}
+
+/* 992px */
+@media only screen and (max-width: 62em) {
+  .container {
+    max-width: 72rem;
+  }
+
+  .hero-para {
+    font-size: 2.4rem;
+    line-height: 1.7;
+    padding: 0 8rem;
+  }
+
+  .hero-form {
+    width: 72rem;
+  }
+
+  .feature__sm-box {
+    margin-bottom: 1.8rem;
+  }
+
+  .model-name {
+    font-size: 2rem;
+    margin-bottom: 1.8rem;
+  }
+
+  .address {
+    font-size: 1.6rem;
+    margin-bottom: 1.6rem;
+  }
+
+  .feature__img {
+    height: 18rem;
+  }
+
+  .feature-slide {
+    width: 90%;
+  }
+
+  .card-container {
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 2.4rem;
+    padding-top: 4.8rem;
+  }
+
+  .trend-container {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6, 1fr);
+    gap: 2.4rem;
+  }
+
+  .trend-btm-box {
+    padding: 3rem;
+  }
+
+  .platform {
+    font-size: 1.4rem;
+    padding: 1.2rem 3.2rem;
+  }
+
+  .trend-icon-outer {
+    height: 4rem;
+    width: 4rem;
+  }
+
+  .trend-icon-inner {
+    font-size: 1.8rem !important;
+  }
+
+  .feature__sm-box {
+    margin-bottom: 1.8rem;
+  }
+
+  .trend-model-name {
+    font-size: 2rem;
+    margin-bottom: 1.8rem;
+  }
+
+  .trend-address {
+    font-size: 1.6rem;
+  }
+
+  .trend-star-list {
+    padding-bottom: 1.4rem;
+  }
+
+  .trend-box {
+    grid-template-rows: 21rem;
+  }
+
+  .slider {
+    height: 41rem;
+  }
+
+  .slide {
+    padding: 0;
+  }
+
+  .slider__btn {
+    display: none;
+  }
+
+  .dots {
+    bottom: -5rem;
+  }
+
+  .section-testimonial {
+    padding: 7.4rem 0;
+  }
+
+  .blog-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .testimonial-img-box {
+    width: 15rem;
+    height: 15rem;
+    margin-bottom: 2rem;
+  }
+
+  .client-name {
+    font-size: 2rem;
+  }
+
+  .heading-blog {
+    font-size: 2.4rem;
+  }
+
+  .blog-info {
+    font-size: 1.6rem;
+    margin-bottom: 1.6rem;
+    gap: 7px;
+  }
+
+  .blog-content {
+    font-size: 1.7rem;
+    margin-bottom: 1.6rem;
+    line-height: 1.7;
+  }
+
+  .newsletter-container {
+    align-items: center;
+    gap: 3.6rem;
+  }
+
+  .newsletter-heading {
+    font-size: 2rem;
+    margin-bottom: 1.2rem;
+  }
+
+  .newsletter-para {
+    font-size: 1.8rem;
+    line-height: 1.7;
+  }
+
+  .footer-box {
+    gap: 1.6rem;
+    grid-template-columns: 2fr 1fr 1fr 15rem;
+  }
+
+  .footer-input {
+    display: none;
+  }
+
+  .footer-entry {
+    display: block;
+    background-color: transparent;
+    border-radius: 0;
+    outline: none;
+    border: 1px solid #6c757d;
+    color: #fff;
+    padding: 1.2rem 0.5rem;
+    flex: 1;
+    width: 5rem;
+  }
+
+  .follow-list {
+    flex-wrap: wrap;
+  }
+
+  .follow-list li:nth-child(3) {
+    margin-left: 3.5rem;
+  }
+
+  .footer-search-btn {
+    padding: 1rem;
+  }
+
+  .footer {
+    padding: 9.6rem 0 7.4rem;
+  }
+}
+
+/* 880px */
+@media only screen and (max-width: 55em) {
+  .heading-blog {
+    font-size: 2rem;
+  }
+
+  .blog-info {
+    font-size: 1.4rem;
+    gap: 3px;
+  }
+
+  .blog-content {
+    font-size: 1.5rem;
+  }
+
+  .blog-box {
+    padding: 4.8rem 1.5rem 0;
+  }
+}
+
+/* 768px */
+@media only screen and (max-width: 48em) {
+  .container {
+    max-width: 54rem;
+  }
+
+  .hero-form {
+    width: 54rem;
+  }
+
+  .hero-heading {
+    font-size: 3.6rem;
+  }
+
+  .hero-para {
+    font-size: 2rem;
+    padding: 0;
+  }
+
+  .feature-slide {
+    width: 70%;
+    margin: 0 auto !important;
+  }
+
+  .card-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .trend-box {
+    grid-template-columns: 1fr;
+    grid-template-rows: 30rem 22rem;
+    border-radius: 5px;
+    box-shadow: 0 2px 20px -2px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+  }
+
+  .blog-container {
+    grid-template-columns: 1fr;
+  }
+
+  .heading-blog {
+    font-size: 2.4rem;
+  }
+
+  .blog-content {
+    font-size: 1.7rem;
+    margin-bottom: 1.6rem;
+    line-height: 1.7;
+  }
+
+  .blog-info {
+    font-size: 1.6rem;
+    margin-bottom: 1.6rem;
+    gap: 7px;
+  }
+
+  .newsletter-container {
+    grid-template-columns: 1fr;
+    gap: 1.6rem;
+  }
+
+  .footer-box {
+    gap: 2.4rem;
+    grid-template-columns: 1fr;
+  }
+
+  .footer-para {
+    font-size: 2rem;
+  }
+
+  .footer-heading {
+    font-size: 2rem;
+    margin-bottom: 2.4rem;
+  }
+
+  .follow-list li:nth-child(3) {
+    margin-left: 0;
+  }
+
+  .footer-input {
+    display: block;
+    flex: 1;
+  }
+
+  .footer-entry {
+    display: none;
+  }
+
+  .footer-search-btn {
+    padding: 1.2rem 2.4rem;
+  }
+
+  .copy-right {
+    font-size: 1.7rem;
+  }
+}
+
+/* 608px */
+@media only screen and (max-width: 38em) {
+  .feature-slide {
+    width: 60%;
+    margin: 0 auto !important;
+  }
+
+  .owl-nav {
+    display: none;
+  }
+
+  .hero-form {
+    width: 46rem;
+  }
+
+  .card-container {
+    grid-template-columns: 1fr;
+  }
+
+  .heading-feature {
+    margin-left: 3rem;
+    font-size: 2.8rem;
+  }
+
+  .section-categories {
+    padding: 9.6rem 0;
+  }
+
+  .section-trending {
+    padding: 9.6rem 2rem;
+  }
+
+  .section-newsletter {
+    padding: 6.4rem 2rem;
+  }
+
+  .header {
+    padding: 0 2rem;
+  }
+
+  .section-blog {
+    padding: 9.6rem 2rem;
+  }
+
+  .footer {
+    padding: 9.6rem 2rem 7.4rem;
+  }
+}
+
+/* 512px */
+@media only screen and (max-width: 32em) {
+  .hero-form {
+    width: 40rem;
+  }
+
+  .hero-heading {
+    font-size: 3.2rem;
+  }
+
+  .hero-para {
+    font-size: 1.7rem;
+  }
+
+  .tag-heading {
+    font-size: 1.4rem;
+    line-height: 1.3;
+    margin-right: 1rem;
+  }
+
+  .feature-slide {
+    width: 70%;
+    margin: 0 auto !important;
+  }
+
+  .testimonial-content {
+    font-size: 1.8rem;
+  }
+
+  .footer-para {
+    font-size: 1.6rem;
+  }
+
+  .section-testimonial {
+    padding: 7.4rem 2rem;
+  }
+
+  .testimonial-img-box {
+    width: 10rem;
+    height: 10rem;
+    margin-bottom: 1.8rem;
+  }
+}
+
+/* 432px */
+@media only screen and (max-width: 27em) {
+  .hero-form {
+    width: 36rem;
+  }
+
+  .hero-heading {
+    font-size: 2.6rem;
+  }
+
+  .feature-slide {
+    width: 80%;
+    margin: 0 auto !important;
+  }
+
+  .heading-blog {
+    font-size: 2.2rem;
+  }
+
+  .hero-para {
+    margin-bottom: 1rem;
+  }
+
+  .hero-heading {
+    margin-bottom: 1rem;
+  }
+
+  .testimonial-content {
+    font-size: 1.6rem;
+  }
+
+  .copy-right {
+    font-size: 1.4rem;
   }
 }

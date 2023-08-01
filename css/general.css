@@ -20,6 +20,7 @@ body {
   position: relative;
   max-width: 2112px;
   margin: 0 auto;
+  overflow-x: hidden !important;
 }
 
 ::selection {

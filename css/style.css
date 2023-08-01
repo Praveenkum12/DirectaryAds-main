@@ -4,6 +4,7 @@
   background-size: cover;
   height: 100vh;
   background-attachment: fixed;
+  background-position: center;
   filter: saturate(1.5);
   position: relative;
 }
@@ -900,6 +901,7 @@ input::placeholder {
   padding: 4.8rem 0;
   text-align: center;
   border-top: 1px solid rgba(255, 255, 255, 0.1);
+  line-height: 1.7;
 }
 
 .copy-right a {
@@ -920,6 +922,10 @@ input::placeholder {
 
 .btn:hover {
   background-color: #046df4;
+}
+
+.footer-entry {
+  display: none;
 }
 
 @keyframes moveUp {
